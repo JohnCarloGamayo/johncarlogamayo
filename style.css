@@ -1004,12 +1004,15 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    align-items: flex-start;
 }
 
 .contact-row {
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
     justify-content: flex-start;
+    width: 100%;
 }
 
 .contact-link {
