@@ -988,13 +988,6 @@ body {
     color: var(--text-secondary);
 }
 
-/* MOBILE SECTIONS - Hidden on Desktop */
-.skills-mobile-section,
-.expertise-mobile-section,
-.footer-mobile {
-    display: none;
-}
-
 /* CONTACT WIDGET */
 .contact-widget {
     animation: fadeIn 0.8s ease-out 0.6s both;
@@ -1355,17 +1348,6 @@ body {
     .section-header { margin-bottom: clamp(1rem, 3vw, 1.2rem); }
     .section-header h2 { font-size: clamp(1.25rem, 4vw, 1.4rem); }
     .about-card { padding: clamp(1.3rem, 3.5vw, 1.5rem); }
-    
-    /* Show Mobile Sections ONLY in portrait mode */
-    .skills-mobile-section { display: block !important; margin: 2rem 0; overflow: hidden; }
-    .expertise-mobile-section { display: block !important; margin: 2rem 0; }
-    .footer-mobile { 
-        display: block !important;
-        background: var(--sidebar-bg);
-        padding: 2rem 1rem;
-        margin-top: 3rem;
-        border-top: 1px solid var(--border-color);
-    }
     .about-text h3 { font-size: clamp(1.2rem, 4vw, 1.35rem); }
     .about-text p { font-size: clamp(0.85rem, 2.8vw, 0.9rem); line-height: 1.7; }
     .stats-grid { gap: clamp(0.7rem, 2vw, 0.8rem); }
@@ -1508,41 +1490,6 @@ body {
         display: none;
     }
     
-    /* Mobile Skills Slider - REMOVED from this media query */
-    .skills-slider { width: 100%; overflow: hidden; }
-    .skills-track { 
-        display: flex; 
-        gap: 1.5rem;
-        animation: slideLeft 20s linear infinite;
-    }
-    .skill-item-mobile {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 0.5rem;
-        min-width: 80px;
-        flex-shrink: 0;
-    }
-    .skill-item-mobile .skill-icon {
-        width: 50px;
-        height: 50px;
-        font-size: 1.5rem;
-    }
-    .skill-item-mobile span {
-        font-size: 0.75rem;
-        color: var(--text-secondary);
-        white-space: nowrap;
-    }
-    
-    @keyframes slideLeft {
-        0% { transform: translateX(0); }
-        100% { transform: translateX(-50%); }
-    }
-    
-    /* Mobile Expertise - REMOVED from this media query */
-    
-    /* Mobile Footer - REMOVED from this media query */
-    .footer-mobile .widget { margin: 0; }
     .footer-copyright {
         text-align: center;
         margin-top: 1.5rem;
