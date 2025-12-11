@@ -1355,6 +1355,17 @@ body {
     .section-header { margin-bottom: clamp(1rem, 3vw, 1.2rem); }
     .section-header h2 { font-size: clamp(1.25rem, 4vw, 1.4rem); }
     .about-card { padding: clamp(1.3rem, 3.5vw, 1.5rem); }
+    
+    /* Show Mobile Sections ONLY in portrait mode */
+    .skills-mobile-section { display: block !important; margin: 2rem 0; overflow: hidden; }
+    .expertise-mobile-section { display: block !important; margin: 2rem 0; }
+    .footer-mobile { 
+        display: block !important;
+        background: var(--sidebar-bg);
+        padding: 2rem 1rem;
+        margin-top: 3rem;
+        border-top: 1px solid var(--border-color);
+    }
     .about-text h3 { font-size: clamp(1.2rem, 4vw, 1.35rem); }
     .about-text p { font-size: clamp(0.85rem, 2.8vw, 0.9rem); line-height: 1.7; }
     .stats-grid { gap: clamp(0.7rem, 2vw, 0.8rem); }
@@ -1497,8 +1508,7 @@ body {
         display: none;
     }
     
-    /* Mobile Skills Slider */
-    .skills-mobile-section { display: block; margin: 2rem 0; overflow: hidden; }
+    /* Mobile Skills Slider - REMOVED from this media query */
     .skills-slider { width: 100%; overflow: hidden; }
     .skills-track { 
         display: flex; 
@@ -1529,17 +1539,9 @@ body {
         100% { transform: translateX(-50%); }
     }
     
-    /* Mobile Expertise */
-    .expertise-mobile-section { display: block; margin: 2rem 0; }
+    /* Mobile Expertise - REMOVED from this media query */
     
-    /* Mobile Footer */
-    .footer-mobile { 
-        display: block;
-        background: var(--sidebar-bg);
-        padding: 2rem 1rem;
-        margin-top: 3rem;
-        border-top: 1px solid var(--border-color);
-    }
+    /* Mobile Footer - REMOVED from this media query */
     .footer-mobile .widget { margin: 0; }
     .footer-copyright {
         text-align: center;
