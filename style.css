@@ -1486,7 +1486,16 @@ body {
     .about-text p { font-size: clamp(0.85rem, 2.5vw, 0.92rem); line-height: 1.7; }
     .about-highlights { grid-template-columns: 1fr; gap: 0.8rem; }
     .highlight-item { font-size: clamp(0.82rem, 2.5vw, 0.9rem); padding: 0.7rem; }
-    .right-sidebar { display: none; }
+    
+    /* Show right sidebar content in main on mobile */
+    .right-sidebar { 
+        position: static;
+        width: 100%;
+        height: auto;
+        border: none;
+        padding: 0;
+        display: none;
+    }
     
     /* Mobile Skills Slider */
     .skills-mobile-section { display: block; margin: 2rem 0; overflow: hidden; }
