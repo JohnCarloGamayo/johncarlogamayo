@@ -176,7 +176,7 @@ function addMessage(text, sender) {
         hour12: true 
     });
     
-    const avatarUrl = 'images/profile.jpg';
+    const avatarUrl = 'images/newprofile.jpg';
     
     messageDiv.innerHTML = `
         ${sender === 'bot' ? `<img src="${avatarUrl}" alt="AI" class="message-avatar">` : ''}
@@ -195,7 +195,7 @@ function showTypingIndicator() {
     typingDiv.className = 'chat-message bot typing-message';
     typingDiv.id = 'typingIndicator';
     typingDiv.innerHTML = `
-        <img src="images/profile.jpg" alt="AI" class="message-avatar">
+        <img src="images/newprofile.jpg" alt="AI" class="message-avatar">
         <div class="message-content">
             <div class="typing-indicator">
                 <span></span>
